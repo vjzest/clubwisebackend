@@ -4,8 +4,8 @@ import { WsException } from '@nestjs/websockets';
 import { verify, JwtPayload } from 'jsonwebtoken';
 import { Model } from 'mongoose';
 import { Socket } from 'socket.io';
-import { User } from 'src/shared/entities/user.entity';
-import { ENV } from 'src/utils/config/env.config';
+import { User } from '../../shared/entities/user.entity';
+import { ENV } from '../../utils/config/env.config';
 
 @Injectable()
 export class WsAuthGuard implements CanActivate {

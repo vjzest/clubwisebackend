@@ -2,9 +2,9 @@ import { Body, Controller, Get, Post, Query, Req } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { AssetsService } from './assets.service';
 import { Request } from 'express';
-import { BookmarksService } from 'src/user/bookmarks/bookmarks.service';
+import { BookmarksService } from '../user/bookmarks/bookmarks.service';
 import { Types } from 'mongoose';
-import { FORUM_TYPE_MAP, MODULE_TYPE_MAP } from 'src/utils/text';
+import { FORUM_TYPE_MAP, MODULE_TYPE_MAP } from '../utils/text';
 
 @ApiTags('Assets')
 @ApiBearerAuth()

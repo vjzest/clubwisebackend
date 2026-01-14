@@ -3,15 +3,15 @@ import { InjectConnection, InjectModel } from '@nestjs/mongoose';
 import { Model, Types } from 'mongoose';
 import { CreateGenericPostDto, FileDto } from './dto/create-generic-post.dto';
 import { UpdateGenericPostDto } from './dto/update-generic-post.dto';
-import { GenericPost } from 'src/shared/entities/generic-post.entity';
-import { UploadService } from 'src/shared/upload/upload.service';
-import { AssetsService } from 'src/assets/assets.service';
-import { EmitGenericPostAnnouncementProps, NotificationEventsService } from 'src/notification/notification-events.service';
-import { ClubMembers } from 'src/shared/entities/clubmembers.entity';
-import { NodeMembers } from 'src/shared/entities/node-members.entity';
-import { ChapterMember } from 'src/shared/entities/chapters/chapter-member.entity';
+import { GenericPost } from '../../shared/entities/generic-post.entity';
+import { UploadService } from '../../shared/upload/upload.service';
+import { AssetsService } from '../../assets/assets.service';
+import { EmitGenericPostAnnouncementProps, NotificationEventsService } from '../../notification/notification-events.service';
+import { ClubMembers } from '../../shared/entities/clubmembers.entity';
+import { NodeMembers } from '../../shared/entities/node-members.entity';
+import { ChapterMember } from '../../shared/entities/chapters/chapter-member.entity';
 import { Connection } from 'mongoose';
-import { CommonService } from 'src/plugin/common/common.service';
+import { CommonService } from '../../plugin/common/common.service';
 
 interface FileObject {
     buffer: Buffer;

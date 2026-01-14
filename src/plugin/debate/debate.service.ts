@@ -9,21 +9,21 @@ import { Connection, PipelineStage } from 'mongoose';
 
 import { InjectConnection, InjectModel } from '@nestjs/mongoose';
 import { Model, Types } from 'mongoose';
-import { ClubMembers } from 'src/shared/entities/clubmembers.entity';
-import { Debate } from 'src/shared/entities/debate/debate.entity';
-import { NodeMembers } from 'src/shared/entities/node-members.entity';
-import { UploadService } from 'src/shared/upload/upload.service';
-import { DebateArgument } from 'src/shared/entities/debate/debate-argument.entity';
+import { ClubMembers } from '../../shared/entities/clubmembers.entity';
+import { Debate } from '../../shared/entities/debate/debate.entity';
+import { NodeMembers } from '../../shared/entities/node-members.entity';
+import { UploadService } from '../../shared/upload/upload.service';
+import { DebateArgument } from '../../shared/entities/debate/debate-argument.entity';
 import { DebatesResponse, TForum } from 'typings';
-import { DebateAdoption } from 'src/shared/entities/debate/debate-adoption-entity';
-import { ChapterDebates } from 'src/shared/entities/chapters/modules/chapter-debates.entity';
-import { ChapterMember } from 'src/shared/entities/chapters/chapter-member.entity';
-import { Chapter } from 'src/shared/entities/chapters/chapter.entity';
+import { DebateAdoption } from '../../shared/entities/debate/debate-adoption-entity';
+import { ChapterDebates } from '../../shared/entities/chapters/modules/chapter-debates.entity';
+import { ChapterMember } from '../../shared/entities/chapters/chapter-member.entity';
+import { Chapter } from '../../shared/entities/chapters/chapter.entity';
 import { CommonService } from '../common/common.service';
 import { error } from 'console';
-import { Club } from 'src/shared/entities/club.entity';
-import { AssetsService } from 'src/assets/assets.service';
-import { Node_ } from 'src/shared/entities/node.entity';
+import { Club } from '../../shared/entities/club.entity';
+import { AssetsService } from '../../assets/assets.service';
+import { Node_ } from '../../shared/entities/node.entity';
 @Injectable()
 export class DebateService {
   constructor(

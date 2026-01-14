@@ -8,10 +8,10 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { CreateDetailsDto } from './dto/create-details.dto';
 import { UpdateInterestDto } from './dto/update-interest.dto';
-import { ServiceResponse } from 'src/shared/types/service.response.type';
+import { ServiceResponse } from '../../shared/types/service.response.type';
 import { OnboardingStage } from './dto/onboarding-stages.enum';
-import { UploadService } from 'src/shared/upload/upload.service';
-import { User } from 'src/shared/entities/user.entity';
+import { UploadService } from '../../shared/upload/upload.service';
+import { User } from '../../shared/entities/user.entity';
 import { randomUUID } from 'crypto';
 
 @Injectable()

@@ -2,8 +2,8 @@ import { InjectModel } from '@nestjs/mongoose';
 import { OnGatewayConnection, OnGatewayDisconnect, SubscribeMessage, WebSocketGateway, WebSocketServer } from '@nestjs/websockets';
 import { Model } from 'mongoose';
 import { Server, Socket } from 'socket.io';
-import { User } from 'src/user/auth/signup/entities/user.entity';
-import { ENV } from 'src/utils/config/env.config';
+import { User } from '../user/auth/signup/entities/user.entity';
+import { ENV } from '../utils/config/env.config';
 import { verify, JwtPayload } from 'jsonwebtoken'
 import { NotificationService } from './notification.service';
 

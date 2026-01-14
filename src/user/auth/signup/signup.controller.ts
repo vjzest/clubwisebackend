@@ -9,7 +9,7 @@ import {
   BadRequestException,
   InternalServerErrorException,
 } from '@nestjs/common';
-import { SkipAuth } from 'src/decorators/skip-auth.decorator';
+import { SkipAuth } from '../../../decorators/skip-auth.decorator';
 import { OtpService } from './otp.service';
 
 @ApiTags('Auth')

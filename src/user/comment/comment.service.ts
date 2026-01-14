@@ -5,12 +5,12 @@ import {
 } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, Types } from 'mongoose';
-import { Comment } from 'src/shared/entities/comment.entity';
+import { Comment } from '../../shared/entities/comment.entity';
 import { CreateCommentDto, entities } from './dto/comment.dto';
-import { UploadService } from 'src/shared/upload/upload.service';
-import { SocketGateway } from 'src/socket/socket.gateway';
+import { UploadService } from '../../shared/upload/upload.service';
+import { SocketGateway } from '../../socket/socket.gateway';
 import { StdAssetsModule } from '../standard-assets/standard-assets.module';
-import { StdPluginAsset } from 'src/shared/entities/standard-plugin/std-plugin-asset.entity';
+import { StdPluginAsset } from '../../shared/entities/standard-plugin/std-plugin-asset.entity';
 
 @Injectable()
 export class CommentService {

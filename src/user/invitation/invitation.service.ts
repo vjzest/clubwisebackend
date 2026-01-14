@@ -6,16 +6,16 @@ import {
 } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, Types } from 'mongoose';
-import { Invitation } from 'src/shared/entities/invitation.entity';
+import { Invitation } from '../../shared/entities/invitation.entity';
 import { CreateInvitationDto } from './dto/create-invitation.dto';
-import { Club } from 'src/shared/entities/club.entity';
-import { ClubMembers } from 'src/shared/entities/clubmembers.entity';
-import { Node_ } from 'src/shared/entities/node.entity';
-import { NodeMembers } from 'src/shared/entities/node-members.entity';
-import { ClubJoinRequests } from 'src/shared/entities/club-join-requests.entity';
-import { NodeJoinRequest } from 'src/shared/entities/node-join-requests.entity';
+import { Club } from '../../shared/entities/club.entity';
+import { ClubMembers } from '../../shared/entities/clubmembers.entity';
+import { Node_ } from '../../shared/entities/node.entity';
+import { NodeMembers } from '../../shared/entities/node-members.entity';
+import { ClubJoinRequests } from '../../shared/entities/club-join-requests.entity';
+import { NodeJoinRequest } from '../../shared/entities/node-join-requests.entity';
 import { async } from 'rxjs';
-import { EmitInviteUserProps, NotificationEventsService } from 'src/notification/notification-events.service';
+import { EmitInviteUserProps, NotificationEventsService } from '../../notification/notification-events.service';
 
 @Injectable()
 export class InvitationService {

@@ -1,17 +1,17 @@
-import { Chapter } from "src/shared/entities/chapters/chapter.entity";
-import { Club } from "src/shared/entities/club.entity";
-import { Debate } from "src/shared/entities/debate/debate.entity";
-import { DebateAdoption } from "src/shared/entities/debate/debate-adoption-entity";
-import { IssuesAdoption } from "src/shared/entities/issues/issues-adoption.entity";
-import { Issues } from "src/shared/entities/issues/issues.entity";
-import { Node_ } from "src/shared/entities/node.entity";
-import { ProjectAdoption } from "src/shared/entities/projects/project-adoption.entity";
-import { Projects } from "src/shared/entities/projects/project.entity";
-import { RulesAdoption } from "src/shared/entities/rules/rules-adoption.entity";
-import { RulesRegulations } from "src/shared/entities/rules/rules-regulations.entity";
-import { StdAssetAdoption } from "src/shared/entities/standard-plugin/std-asset-adoption.entity";
-import { StdPluginAsset } from "src/shared/entities/standard-plugin/std-plugin-asset.entity";
-import { GenericPost } from "src/shared/entities/generic-post.entity";
+import { Chapter } from '../shared/entities/chapters/chapter.entity';
+import { Club } from '../shared/entities/club.entity';
+import { Debate } from '../shared/entities/debate/debate.entity';
+import { DebateAdoption } from '../shared/entities/debate/debate-adoption-entity';
+import { IssuesAdoption } from '../shared/entities/issues/issues-adoption.entity';
+import { Issues } from '../shared/entities/issues/issues.entity';
+import { Node_ } from '../shared/entities/node.entity';
+import { ProjectAdoption } from '../shared/entities/projects/project-adoption.entity';
+import { Projects } from '../shared/entities/projects/project.entity';
+import { RulesAdoption } from '../shared/entities/rules/rules-adoption.entity';
+import { RulesRegulations } from '../shared/entities/rules/rules-regulations.entity';
+import { StdAssetAdoption } from '../shared/entities/standard-plugin/std-asset-adoption.entity';
+import { StdPluginAsset } from '../shared/entities/standard-plugin/std-plugin-asset.entity';
+import { GenericPost } from '../shared/entities/generic-post.entity';
 
 export const printWithBorder = (message: string) => {
   const border = '='.repeat(message.length + 4);

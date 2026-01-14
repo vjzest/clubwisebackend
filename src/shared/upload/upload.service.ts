@@ -6,7 +6,7 @@ import {
   DeleteObjectCommand,
 } from '@aws-sdk/client-s3';
 import * as path from 'path';
-import { ENV } from 'src/utils/config/env.config';
+import { ENV } from '../../utils/config/env.config';
 
 @Injectable()
 export class UploadService {

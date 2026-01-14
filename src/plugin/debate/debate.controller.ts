@@ -25,12 +25,12 @@ import {
 import { DebateService } from './debate.service';
 import { CreateDebateDto } from './dto/create.dto';
 import { Request, Response } from 'express';
-import { FileValidationPipe } from 'src/shared/pipes/file-validation.pipe';
+import { FileValidationPipe } from '../../shared/pipes/file-validation.pipe';
 import { FilesInterceptor } from '@nestjs/platform-express';
 import { memoryStorage } from 'multer';
 import { Types } from 'mongoose';
 import { AdoptDebateDto } from './dto/adopte.dto';
-import { DebateArgument } from 'src/shared/entities/debate/debate-argument.entity';
+import { DebateArgument } from '../../shared/entities/debate/debate-argument.entity';
 import { TForum } from 'typings';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 

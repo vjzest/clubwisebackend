@@ -13,17 +13,17 @@ import {
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { CommentService } from './comment.service';
-import { SkipAuth } from 'src/decorators/skip-auth.decorator';
+import { SkipAuth } from '../../decorators/skip-auth.decorator';
 import { CreateCommentDto } from './dto/comment.dto';
 import { FilesInterceptor } from '@nestjs/platform-express';
 import { memoryStorage } from 'multer';
 import { Types } from 'mongoose';
-import { FileValidationPipe } from 'src/shared/pipes/file-validation.pipe';
-import { RulesRegulations } from 'src/shared/entities/rules/rules-regulations.entity';
-import { Issues } from 'src/shared/entities/issues/issues.entity';
-import { Projects } from 'src/shared/entities/projects/project.entity';
-import { IssueSolution } from 'src/shared/entities/issues/issue-solution.entity';
-import { GenericPost } from 'src/shared/entities/generic-post.entity';
+import { FileValidationPipe } from '../../shared/pipes/file-validation.pipe';
+import { RulesRegulations } from '../../shared/entities/rules/rules-regulations.entity';
+import { Issues } from '../../shared/entities/issues/issues.entity';
+import { Projects } from '../../shared/entities/projects/project.entity';
+import { IssueSolution } from '../../shared/entities/issues/issue-solution.entity';
+import { GenericPost } from '../../shared/entities/generic-post.entity';
 
 @ApiTags('Comments')
 @ApiBearerAuth()

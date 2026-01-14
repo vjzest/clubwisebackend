@@ -1,6 +1,6 @@
 import { IsEnum, IsOptional, IsString, IsNumberString, Min } from 'class-validator';
 import { Type } from 'class-transformer';
-import { AssetType, ReportStatus } from 'src/shared/entities/reports.entity';
+import { AssetType, ReportStatus } from '../../../shared/entities/reports.entity';
 
 export class QueryReportsDto {
   @IsOptional()

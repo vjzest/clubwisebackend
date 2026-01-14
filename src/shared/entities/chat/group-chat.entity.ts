@@ -1,6 +1,6 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import { Document, SchemaTypes, Types } from "mongoose";
-import { User } from "src/user/auth/signup/entities/user.entity";
+import { User } from '../../../user/auth/signup/entities/user.entity';
 import { Chapter } from "../chapters/chapter.entity";
 import { Club } from "../club.entity";
 

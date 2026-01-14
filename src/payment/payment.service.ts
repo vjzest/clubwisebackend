@@ -11,20 +11,20 @@ import {
   SubscriptionStatus,
   BillingCycle,
   ForumType,
-} from 'src/shared/entities/forum-subscription.entity';
-import { PaymentSlabs } from 'src/shared/entities/payment-slabs.entity';
-import { Club } from 'src/shared/entities/club.entity';
-import { Node_ } from 'src/shared/entities/node.entity';
-import { ClubMembers } from 'src/shared/entities/clubmembers.entity';
-import { NodeMembers } from 'src/shared/entities/node-members.entity';
-import { User } from 'src/shared/entities/user.entity';
+} from '../shared/entities/forum-subscription.entity';
+import { PaymentSlabs } from '../shared/entities/payment-slabs.entity';
+import { Club } from '../shared/entities/club.entity';
+import { Node_ } from '../shared/entities/node.entity';
+import { ClubMembers } from '../shared/entities/clubmembers.entity';
+import { NodeMembers } from '../shared/entities/node-members.entity';
+import { User } from '../shared/entities/user.entity';
 import { RazorpayService } from './razorpay.service';
 import {
   CreateSubscriptionDto,
   VerifyPaymentDto,
   CancelSubscriptionDto,
 } from './dto/create-subscription.dto';
-import { ENV } from 'src/utils/config/env.config';
+import { ENV } from '../utils/config/env.config';
 
 @Injectable()
 export class PaymentService {

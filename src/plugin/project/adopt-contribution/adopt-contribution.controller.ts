@@ -13,8 +13,8 @@ import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { Types } from 'mongoose';
 import { AdoptContributionService } from './adopt-contribution.service';
 import { CreateAdoptContributionDto } from './dto/create-adopt-contribution.dto';
-import { ProjectFiles } from 'src/decorators/project-file-upload/project-files.decorator';
-import { FileValidationPipe } from 'src/shared/pipes/file-validation.pipe';
+import { ProjectFiles } from '../../../decorators/project-file-upload/project-files.decorator';
+import { FileValidationPipe } from '../../../shared/pipes/file-validation.pipe';
 
 @ApiTags('Projects - Contributions')
 @ApiBearerAuth()

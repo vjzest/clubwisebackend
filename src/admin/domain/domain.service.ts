@@ -10,7 +10,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { CreateDomainDto } from './dto/create-domain.dto';
 import { UpdateDomainDto } from './dto/update-domain.dto';
-import { Domain } from 'src/shared/entities/domain.entity';
+import { Domain } from '../../shared/entities/domain.entity';
 
 @Injectable()
 export class DomainService {

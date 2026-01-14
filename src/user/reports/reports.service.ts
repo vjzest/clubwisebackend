@@ -1,10 +1,10 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, Types } from 'mongoose';
-import { Report } from 'src/shared/entities/reports.entity';
-import { ReportReason } from 'src/shared/entities/report-reason.entity';
+import { Report } from '../../shared/entities/reports.entity';
+import { ReportReason } from '../../shared/entities/report-reason.entity';
 import { CreateReportDto } from './dto/create-report.dto';
-import { DEFAULT_REPORT_REASONS } from 'src/shared/entities/report-reason.seeder';
+import { DEFAULT_REPORT_REASONS } from '../../shared/entities/report-reason.seeder';
 
 @Injectable()
 export class ReportsService {

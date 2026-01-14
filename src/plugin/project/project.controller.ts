@@ -22,7 +22,7 @@ import {
 } from './dto/create-update-project.dto';
 import { memoryStorage } from 'multer';
 import { FileFieldsInterceptor } from '@nestjs/platform-express';
-import { FileValidationPipe } from 'src/shared/pipes/file-validation.pipe';
+import { FileValidationPipe } from '../../shared/pipes/file-validation.pipe';
 import { Request } from 'express';
 import {
   ApiBearerAuth,
@@ -31,9 +31,9 @@ import {
   ApiConsumes,
   ApiResponse,
 } from '@nestjs/swagger';
-import { ProjectFiles } from 'src/decorators/project-file-upload/project-files.decorator';
+import { ProjectFiles } from '../../decorators/project-file-upload/project-files.decorator';
 import { Types } from 'mongoose';
-import { User } from 'src/shared/entities/user.entity';
+import { User } from '../../shared/entities/user.entity';
 import { AnswerFaqDto, CreateDtoFaq } from './dto/faq.dto';
 import { TForum } from 'typings';
 

@@ -7,9 +7,9 @@ import { CreateAnnouncementDto } from './dto/create-announcement.dto';
 import { UpdateAnnouncementDto } from './dto/update-announcement.dto';
 import { Model, Types } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
-import { ProjectAnnouncement } from 'src/shared/entities/projects/project-announcement.entity';
-import { Projects } from 'src/shared/entities/projects/project.entity';
-import { UploadService } from 'src/shared/upload/upload.service';
+import { ProjectAnnouncement } from '../../../shared/entities/projects/project-announcement.entity';
+import { Projects } from '../../../shared/entities/projects/project.entity';
+import { UploadService } from '../../../shared/upload/upload.service';
 
 @Injectable()
 export class AnnouncementService {

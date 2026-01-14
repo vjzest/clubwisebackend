@@ -13,26 +13,26 @@ import {
 } from './dto/create-update-project.dto';
 import { InjectConnection, InjectModel } from '@nestjs/mongoose';
 import { Connection, Model, Types } from 'mongoose';
-import { Projects } from 'src/shared/entities/projects/project.entity';
-import { NodeMembers } from 'src/shared/entities/node-members.entity';
-import { UploadService } from 'src/shared/upload/upload.service';
-import { ProjectParameter } from 'src/shared/entities/projects/parameter.entity';
-import { ClubMembers } from 'src/shared/entities/clubmembers.entity';
-import { ProjectFaq } from 'src/shared/entities/projects/faq.enitity';
-import { ProjectContribution } from 'src/shared/entities/projects/contribution.entity';
+import { Projects } from '../../shared/entities/projects/project.entity';
+import { NodeMembers } from '../../shared/entities/node-members.entity';
+import { UploadService } from '../../shared/upload/upload.service';
+import { ProjectParameter } from '../../shared/entities/projects/parameter.entity';
+import { ClubMembers } from '../../shared/entities/clubmembers.entity';
+import { ProjectFaq } from '../../shared/entities/projects/faq.enitity';
+import { ProjectContribution } from '../../shared/entities/projects/contribution.entity';
 import { AnswerFaqDto, CreateDtoFaq } from './dto/faq.dto';
-import { ProjectAdoption } from 'src/shared/entities/projects/project-adoption.entity';
-import { ChapterProject } from 'src/shared/entities/chapters/modules/chapter-projects.entity';
-import { Chapter } from 'src/shared/entities/chapters/chapter.entity';
-import { ChapterMember } from 'src/shared/entities/chapters/chapter-member.entity';
+import { ProjectAdoption } from '../../shared/entities/projects/project-adoption.entity';
+import { ChapterProject } from '../../shared/entities/chapters/modules/chapter-projects.entity';
+import { Chapter } from '../../shared/entities/chapters/chapter.entity';
+import { ChapterMember } from '../../shared/entities/chapters/chapter-member.entity';
 import { TCreationType, TForum } from 'typings';
-import { User } from 'src/shared/entities/user.entity';
+import { User } from '../../shared/entities/user.entity';
 import { CommonService } from '../common/common.service';
-import { Comment } from 'src/shared/entities/comment.entity';
-import { Club } from 'src/shared/entities/club.entity';
+import { Comment } from '../../shared/entities/comment.entity';
+import { Club } from '../../shared/entities/club.entity';
 import { async } from 'rxjs';
-import { AssetsService } from 'src/assets/assets.service';
-import { Node_ } from 'src/shared/entities/node.entity';
+import { AssetsService } from '../../assets/assets.service';
+import { Node_ } from '../../shared/entities/node.entity';
 
 /**
  * Service responsible for managing all project-related operations

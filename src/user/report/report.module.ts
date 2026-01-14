@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ReportController } from './report.controller';
 import { ReportService } from './report.service';
-import { SharedModule } from 'src/shared/shared.module';
+import { SharedModule } from '../../shared/shared.module';
 
 @Module({
   imports: [SharedModule],

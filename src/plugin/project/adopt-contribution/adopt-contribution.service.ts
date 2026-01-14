@@ -7,16 +7,16 @@ import {
 import { CreateAdoptContributionDto } from './dto/create-adopt-contribution.dto';
 import { Model, Types } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
-import { Projects } from 'src/shared/entities/projects/project.entity';
-import { ProjectContribution } from 'src/shared/entities/projects/contribution.entity';
-import { UploadService } from 'src/shared/upload/upload.service';
-import { ClubMembers } from 'src/shared/entities/clubmembers.entity';
-import { ProjectAdoption } from 'src/shared/entities/projects/project-adoption.entity';
-import { Club } from 'src/shared/entities/club.entity';
-import { Node_ } from 'src/shared/entities/node.entity';
-import { ProjectActivities } from 'src/shared/entities/projects/project-activities.entity';
-import { NodeMembers } from 'src/shared/entities/node-members.entity';
-import { AssetsService } from 'src/assets/assets.service';
+import { Projects } from '../../../shared/entities/projects/project.entity';
+import { ProjectContribution } from '../../../shared/entities/projects/contribution.entity';
+import { UploadService } from '../../../shared/upload/upload.service';
+import { ClubMembers } from '../../../shared/entities/clubmembers.entity';
+import { ProjectAdoption } from '../../../shared/entities/projects/project-adoption.entity';
+import { Club } from '../../../shared/entities/club.entity';
+import { Node_ } from '../../../shared/entities/node.entity';
+import { ProjectActivities } from '../../../shared/entities/projects/project-activities.entity';
+import { NodeMembers } from '../../../shared/entities/node-members.entity';
+import { AssetsService } from '../../../assets/assets.service';
 
 /**
  * Service responsible for handling project contribution adoptions

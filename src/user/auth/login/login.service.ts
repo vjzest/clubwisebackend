@@ -9,9 +9,9 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Response } from 'express'; // Add this import
 import { LoginDto } from './dto/login.sto';
-import { User } from 'src/shared/entities/user.entity';
-import { comparePasswords, generateToken } from 'src/utils';
-import { ENV } from 'src/utils/config/env.config';
+import { User } from '../../../shared/entities/user.entity';
+import { comparePasswords, generateToken } from '../../../utils';
+import { ENV } from '../../../utils/config/env.config';
 
 @Injectable()
 export class LoginService {

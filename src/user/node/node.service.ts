@@ -10,39 +10,39 @@ import {
 } from '@nestjs/common';
 import { CreateNodeDto } from './dto/create-node.dto';
 import { UpdateNodeDto } from './dto/update-node.dto';
-import { Node_, NodeSchema } from 'src/shared/entities/node.entity';
+import { Node_, NodeSchema } from '../../shared/entities/node.entity';
 import { InjectConnection, InjectModel } from '@nestjs/mongoose';
 import mongoose, { Connection, Model, MongooseError, Types } from 'mongoose';
-import { UploadService } from 'src/shared/upload/upload.service';
-import { SkipAuth } from 'src/decorators/skip-auth.decorator';
-import { NodeJoinRequest } from 'src/shared/entities/node-join-requests.entity';
-import { NodeMembers } from 'src/shared/entities/node-members.entity';
-import { Issues } from 'src/shared/entities/issues/issues.entity';
-import { Debate } from 'src/shared/entities/debate/debate.entity';
-import { Projects } from 'src/shared/entities/projects/project.entity';
-import { RulesRegulations } from 'src/shared/entities/rules/rules-regulations.entity';
+import { UploadService } from '../../shared/upload/upload.service';
+import { SkipAuth } from '../../decorators/skip-auth.decorator';
+import { NodeJoinRequest } from '../../shared/entities/node-join-requests.entity';
+import { NodeMembers } from '../../shared/entities/node-members.entity';
+import { Issues } from '../../shared/entities/issues/issues.entity';
+import { Debate } from '../../shared/entities/debate/debate.entity';
+import { Projects } from '../../shared/entities/projects/project.entity';
+import { RulesRegulations } from '../../shared/entities/rules/rules-regulations.entity';
 import {
   CreateGuidingPrinciples,
   UpdateGuidingPrinciples,
 } from './dto/guiding-principle.dto';
-import { GuidingPrinciples } from 'src/shared/entities/guiding-principles.entity';
-import { generateSlug } from 'src/utils/slug.util';
+import { GuidingPrinciples } from '../../shared/entities/guiding-principles.entity';
+import { generateSlug } from '../../utils/slug.util';
 import { TPlugins } from 'typings';
 import {
   EmitUserJoinApprovedProps,
   EmitUserJoinRejectedProps,
   EmitUserJoinRequestProps,
   NotificationEventsService,
-} from 'src/notification/notification-events.service';
+} from '../../notification/notification-events.service';
 import { from } from 'rxjs';
-import { User } from 'src/shared/entities/user.entity';
-import { StdPlugin } from 'src/shared/entities/standard-plugin/std-plugin.entity';
-import { StdPluginAsset } from 'src/shared/entities/standard-plugin/std-plugin-asset.entity';
-import { GenericPost } from 'src/shared/entities/generic-post.entity';
-import { AssetsService } from 'src/assets/assets.service';
-import { ForumFaqs } from 'src/shared/entities/forum-faqs.entity';
-import { ForumAchievements } from 'src/shared/entities/forum-achievements.entity';
-import { ForumProfile } from 'src/shared/entities/forum-profile.entity';
+import { User } from '../../shared/entities/user.entity';
+import { StdPlugin } from '../../shared/entities/standard-plugin/std-plugin.entity';
+import { StdPluginAsset } from '../../shared/entities/standard-plugin/std-plugin-asset.entity';
+import { GenericPost } from '../../shared/entities/generic-post.entity';
+import { AssetsService } from '../../assets/assets.service';
+import { ForumFaqs } from '../../shared/entities/forum-faqs.entity';
+import { ForumAchievements } from '../../shared/entities/forum-achievements.entity';
+import { ForumProfile } from '../../shared/entities/forum-profile.entity';
 
 @Injectable()
 export class NodeService {

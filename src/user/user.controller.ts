@@ -27,7 +27,7 @@ import { UserWithoutPassword } from './dto/user.type';
 import { Request } from 'express';
 import { AccessDto } from './dto/access.dto';
 import { RoleManagementGuard } from './guards/role-management.guard';
-import { Roles } from 'src/decorators/role.decorator';
+import { Roles } from '../decorators/role.decorator';
 import { FileFieldsInterceptor } from '@nestjs/platform-express';
 
 @ApiTags('Users')

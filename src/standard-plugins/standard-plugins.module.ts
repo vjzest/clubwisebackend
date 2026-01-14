@@ -6,9 +6,9 @@ import { StdPlugin, StdPluginSchema } from '../shared/entities/standard-plugin/s
 import { StdPluginAsset, StdPluginAssetSchema } from '../shared/entities/standard-plugin/std-plugin-asset.entity';
 import { AuthModule } from '../user/auth/auth.module';
 import { StdAssetsModule } from '../user/standard-assets/standard-assets.module';
-import { Club, ClubSchema } from 'src/shared/entities/club.entity';
-import { Node_, NodeSchema } from 'src/shared/entities/node.entity';
-import { Chapter, ChapterSchema } from 'src/shared/entities/chapters/chapter.entity';
+import { Club, ClubSchema } from '../shared/entities/club.entity';
+import { Node_, NodeSchema } from '../shared/entities/node.entity';
+import { Chapter, ChapterSchema } from '../shared/entities/chapters/chapter.entity';
 
 @Module({
   imports: [

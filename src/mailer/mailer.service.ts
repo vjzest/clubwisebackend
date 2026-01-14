@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { TransactionalEmailsApi, SendSmtpEmail } from '@getbrevo/brevo';
-import { ENV } from 'src/utils/config/env.config';
+import { ENV } from '../utils/config/env.config';
 
 @Injectable()
 export class MailerService {

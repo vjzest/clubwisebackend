@@ -1,7 +1,7 @@
 import { Body, Controller, Get, Post, Put, Req, UsePipes, ValidationPipe } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { ConfigurationService } from './configuration.service';
-import { AuthorizationService } from 'src/user/auth/authorization.service';
+import { AuthorizationService } from '../../user/auth/authorization.service';
 import { Request } from 'express';
 import { CreateConfigurationDto } from './dto/create-configuration.dto';
 

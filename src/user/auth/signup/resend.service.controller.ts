@@ -10,7 +10,7 @@ import {
 import { ApiTags } from '@nestjs/swagger';
 import { OtpService } from './otp.service';
 import { Response } from 'express';
-import { SkipAuth } from 'src/decorators/skip-auth.decorator';
+import { SkipAuth } from '../../../decorators/skip-auth.decorator';
 
 @ApiTags('Auth')
 @SkipAuth()

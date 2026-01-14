@@ -1,10 +1,10 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, Types, ClientSession } from 'mongoose';
-import { ChapterMember } from 'src/shared/entities/chapters/chapter-member.entity';
-import { Chapter } from 'src/shared/entities/chapters/chapter.entity';
-import { ClubMembers } from 'src/shared/entities/clubmembers.entity';
-import { NodeMembers } from 'src/shared/entities/node-members.entity';
+import { ChapterMember } from '../../shared/entities/chapters/chapter-member.entity';
+import { Chapter } from '../../shared/entities/chapters/chapter.entity';
+import { ClubMembers } from '../../shared/entities/clubmembers.entity';
+import { NodeMembers } from '../../shared/entities/node-members.entity';
 import { TForum } from 'typings';
 
 interface CopyConfig {

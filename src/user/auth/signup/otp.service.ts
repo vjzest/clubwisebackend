@@ -7,10 +7,10 @@ import {
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { OTP } from './entities/otp.entity';
-import { User } from 'src/shared/entities/user.entity';
-import { generateOtp } from 'src/utils';
-import { generateToken } from 'src/utils';
-import { MailerService } from 'src/mailer/mailer.service';
+import { User } from '../../../shared/entities/user.entity';
+import { generateOtp } from '../../../utils';
+import { generateToken } from '../../../utils';
+import { MailerService } from '../../../mailer/mailer.service';
 @Injectable()
 export class OtpService {
   constructor(

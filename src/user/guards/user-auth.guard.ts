@@ -7,11 +7,11 @@ import {
 } from '@nestjs/common';
 import { Request } from 'express';
 import { verify, JwtPayload } from 'jsonwebtoken';
-import { ENV } from 'src/utils/config/env.config';
+import { ENV } from '../../utils/config/env.config';
 import { Reflector } from '@nestjs/core';
-import { SKIP_AUTH_KEY } from 'src/decorators/skip-auth.decorator';
+import { SKIP_AUTH_KEY } from '../../decorators/skip-auth.decorator';
 import { Document, Model, Types } from 'mongoose';
-import { User } from 'src/shared/entities/user.entity';
+import { User } from '../../shared/entities/user.entity';
 import { InjectModel } from '@nestjs/mongoose';
 
 @Injectable()

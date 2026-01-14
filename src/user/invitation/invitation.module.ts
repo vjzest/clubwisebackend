@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 import { InvitationController } from './invitation.controller';
 import { InvitationService } from './invitation.service';
-import { SharedModule } from 'src/shared/shared.module';
-import { NotificationModule } from 'src/notification/notification.module';
+import { SharedModule } from '../../shared/shared.module';
+import { NotificationModule } from '../../notification/notification.module';
 
 @Module({
   imports: [

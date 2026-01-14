@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { AdminStdPluginsModule } from './std-plugins/std-plugins.module';
-import { UploadService } from 'src/shared/upload/upload.service';
+import { UploadService } from '../shared/upload/upload.service';
 import { UsersModule } from './users/users.module';
 import { ForumsModule } from './forums/forums.module';
 import { DashboardModule } from './dashboard/dashboard.module';

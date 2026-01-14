@@ -2,8 +2,8 @@ import { Body, Controller, Get, Param, Patch, Post, Put, Req, UploadedFiles, Use
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { FilesInterceptor } from '@nestjs/platform-express';
 import { memoryStorage } from 'multer';
-import { FileDto } from 'src/plugin/issues/dto/create-issue.dto';
-import { FileValidationPipe } from 'src/shared/pipes/file-validation.pipe';
+import { FileDto } from '../../plugin/issues/dto/create-issue.dto';
+import { FileValidationPipe } from '../../shared/pipes/file-validation.pipe';
 import { CreateGenericPostDto } from './dto/create-generic-post.dto';
 import { GenericPostService } from './generic-post.service';
 import { Request } from 'express';

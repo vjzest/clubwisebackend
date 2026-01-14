@@ -1,5 +1,5 @@
 import { IsEnum, IsOptional, IsString, MaxLength } from 'class-validator';
-import { ReportStatus } from 'src/shared/entities/reports.entity';
+import { ReportStatus } from '../../../shared/entities/reports.entity';
 
 export class UpdateReportStatusDto {
   @IsEnum(ReportStatus)

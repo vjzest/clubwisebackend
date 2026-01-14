@@ -1,8 +1,8 @@
 // user.entity.ts
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, Types } from 'mongoose';
-import { Club } from 'src/shared/entities/club.entity';
-import { Node_ } from 'src/shared/entities/node.entity';
+import { Club } from '../../../../shared/entities/club.entity';
+import { Node_ } from '../../../../shared/entities/node.entity';
 
 export class ImageData {
   url: string;

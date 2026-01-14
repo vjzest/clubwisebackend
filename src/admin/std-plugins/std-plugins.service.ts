@@ -1,12 +1,12 @@
 import { BadRequestException, ConflictException, Injectable, InternalServerErrorException, NotFoundException } from '@nestjs/common';
-import { StdPlugin } from 'src/shared/entities/standard-plugin/std-plugin.entity';
+import { StdPlugin } from '../../shared/entities/standard-plugin/std-plugin.entity';
 import { Model, plugin } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 import { CreateStdPluginDto } from './dto/create-standard-plugin.dto';
-import { generateSlug } from 'src/utils/slug.util';
+import { generateSlug } from '../../utils/slug.util';
 import { UpdateStdPluginDto } from './dto/update-standard-plugin.dto';
-import { UploadService } from 'src/shared/upload/upload.service';
-import { StdPluginAsset } from 'src/shared/entities/standard-plugin/std-plugin-asset.entity';
+import { UploadService } from '../../shared/upload/upload.service';
+import { StdPluginAsset } from '../../shared/entities/standard-plugin/std-plugin-asset.entity';
 import { generateSafekey, appendRandomSuffix } from './utils/safekey.util';
 
 @Injectable()

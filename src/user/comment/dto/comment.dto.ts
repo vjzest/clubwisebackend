@@ -9,12 +9,12 @@ import {
   ValidateNested,
 } from 'class-validator';
 import { Types } from 'mongoose';
-import { Club } from 'src/shared/entities/club.entity';
-import { IssueSolution } from 'src/shared/entities/issues/issue-solution.entity';
-import { Issues } from 'src/shared/entities/issues/issues.entity';
-import { Node_ } from 'src/shared/entities/node.entity';
-import { Projects } from 'src/shared/entities/projects/project.entity';
-import { RulesRegulations } from 'src/shared/entities/rules/rules-regulations.entity';
+import { Club } from '../../../shared/entities/club.entity';
+import { IssueSolution } from '../../../shared/entities/issues/issue-solution.entity';
+import { Issues } from '../../../shared/entities/issues/issues.entity';
+import { Node_ } from '../../../shared/entities/node.entity';
+import { Projects } from '../../../shared/entities/projects/project.entity';
+import { RulesRegulations } from '../../../shared/entities/rules/rules-regulations.entity';
 
 class EntityDto {
   @IsNotEmpty()

@@ -10,11 +10,11 @@ import { Model } from 'mongoose';
 
 import { CreateUserDto } from './dto/create-user.dto';
 
-import { generateToken, hashPassword } from 'src/utils';
-import { UpdateUserDto } from 'src/user/onboarding/dto/update-user.dto';
+import { generateToken, hashPassword } from '../../../utils';
+import { UpdateUserDto } from '../../onboarding/dto/update-user.dto';
 import { ImageData } from './entities/user.entity';
-import { User } from 'src/shared/entities/user.entity';
-import { ENV } from 'src/utils/config/env.config';
+import { User } from '../../../shared/entities/user.entity';
+import { ENV } from '../../../utils/config/env.config';
 import { OtpService } from './otp.service';
 interface OnBoardingData {
   userId: string;

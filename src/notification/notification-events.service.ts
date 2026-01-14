@@ -2,8 +2,8 @@ import { Injectable } from "@nestjs/common";
 import { NotificationGateway } from "./notification.gateway";
 import { TForum } from "typings";
 import { Types } from "mongoose";
-import { StdPluginAsset } from "src/shared/entities/standard-plugin/std-plugin-asset.entity";
-import { GenericPost } from "src/shared/entities/generic-post.entity";
+import { StdPluginAsset } from '../shared/entities/standard-plugin/std-plugin-asset.entity';
+import { GenericPost } from '../shared/entities/generic-post.entity';
 
 @Injectable()
 export class NotificationEventsService {

@@ -9,39 +9,39 @@ import {
 import { InjectConnection, InjectModel } from '@nestjs/mongoose';
 import mongoose, { Connection, Model, Types } from 'mongoose';
 import { CreateClubDto, UpdateClubDto } from './dto/club.dto';
-import { Club } from 'src/shared/entities/club.entity';
-import { UploadService } from 'src/shared/upload/upload.service';
-import { ClubMembers } from 'src/shared/entities/clubmembers.entity';
-import { ClubJoinRequests } from 'src/shared/entities/club-join-requests.entity';
+import { Club } from '../../shared/entities/club.entity';
+import { UploadService } from '../../shared/upload/upload.service';
+import { ClubMembers } from '../../shared/entities/clubmembers.entity';
+import { ClubJoinRequests } from '../../shared/entities/club-join-requests.entity';
 import { randomUUID } from 'node:crypto';
-import { Chapter } from 'src/shared/entities/chapters/chapter.entity';
-import { GroupChat } from 'src/shared/entities/chat/group-chat.entity';
-import { ChapterMember } from 'src/shared/entities/chapters/chapter-member.entity';
-import { Debate } from 'src/shared/entities/debate/debate.entity';
-import { Issues } from 'src/shared/entities/issues/issues.entity';
-import { Projects } from 'src/shared/entities/projects/project.entity';
-import { RulesRegulations } from 'src/shared/entities/rules/rules-regulations.entity';
-import { generateSlug } from 'src/utils/slug.util';
+import { Chapter } from '../../shared/entities/chapters/chapter.entity';
+import { GroupChat } from '../../shared/entities/chat/group-chat.entity';
+import { ChapterMember } from '../../shared/entities/chapters/chapter-member.entity';
+import { Debate } from '../../shared/entities/debate/debate.entity';
+import { Issues } from '../../shared/entities/issues/issues.entity';
+import { Projects } from '../../shared/entities/projects/project.entity';
+import { RulesRegulations } from '../../shared/entities/rules/rules-regulations.entity';
+import { generateSlug } from '../../utils/slug.util';
 import { TPlugins } from 'typings';
 import {
   EmitUserJoinApprovedProps,
   EmitUserJoinRejectedProps,
   EmitUserJoinRequestProps,
   NotificationEventsService,
-} from 'src/notification/notification-events.service';
-import { IssuesAdoption } from 'src/shared/entities/issues/issues-adoption.entity';
-import { DebateAdoption } from 'src/shared/entities/debate/debate-adoption-entity';
-import { ProjectAdoption } from 'src/shared/entities/projects/project-adoption.entity';
-import { StdPlugin } from 'src/shared/entities/standard-plugin/std-plugin.entity';
+} from '../../notification/notification-events.service';
+import { IssuesAdoption } from '../../shared/entities/issues/issues-adoption.entity';
+import { DebateAdoption } from '../../shared/entities/debate/debate-adoption-entity';
+import { ProjectAdoption } from '../../shared/entities/projects/project-adoption.entity';
+import { StdPlugin } from '../../shared/entities/standard-plugin/std-plugin.entity';
 import {
   CreateGuidingPrinciples,
   UpdateGuidingPrinciples,
 } from './dto/guiding-principle.dto';
-import { GuidingPrinciples } from 'src/shared/entities/guiding-principles.entity';
-import { StdPluginAsset } from 'src/shared/entities/standard-plugin/std-plugin-asset.entity';
-import { ForumFaqs } from 'src/shared/entities/forum-faqs.entity';
-import { ForumAchievements } from 'src/shared/entities/forum-achievements.entity';
-import { ForumProfile } from 'src/shared/entities/forum-profile.entity';
+import { GuidingPrinciples } from '../../shared/entities/guiding-principles.entity';
+import { StdPluginAsset } from '../../shared/entities/standard-plugin/std-plugin-asset.entity';
+import { ForumFaqs } from '../../shared/entities/forum-faqs.entity';
+import { ForumAchievements } from '../../shared/entities/forum-achievements.entity';
+import { ForumProfile } from '../../shared/entities/forum-profile.entity';
 
 @Injectable()
 export class ClubService {

@@ -5,7 +5,7 @@ import {
 } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { PaymentSlabs } from 'src/shared/entities/payment-slabs.entity';
+import { PaymentSlabs } from '../../shared/entities/payment-slabs.entity';
 import { UpdatePaymentSlabsDto, SlabDto } from './dto/update-payment-slabs.dto';
 import {
   FEATURE_DEFINITIONS,

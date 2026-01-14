@@ -3,7 +3,7 @@ import { ApiTags } from '@nestjs/swagger';
 import { GoogleSigninService } from './google-signin.service';
 import { Response } from 'express';
 import { GoogleAuthDto } from '../google-signup/dto/google-auth';
-import { SkipAuth } from 'src/decorators/skip-auth.decorator';
+import { SkipAuth } from '../../../decorators/skip-auth.decorator';
 
 @ApiTags('Auth')
 @SkipAuth()

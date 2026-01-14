@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ChapterController } from './chapter.controller';
 import { ChapterService } from './chapter.service';
-import { SharedModule } from 'src/shared/shared.module';
+import { SharedModule } from '../../shared/shared.module';
 
 @Module({
     imports: [

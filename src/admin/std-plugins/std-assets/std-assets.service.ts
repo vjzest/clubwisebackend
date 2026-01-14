@@ -1,7 +1,7 @@
 import { ForbiddenException, Injectable, InternalServerErrorException, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import {  StdPluginAsset } from 'src/shared/entities/standard-plugin/std-plugin-asset.entity';
-import { StdPlugin } from 'src/shared/entities/standard-plugin/std-plugin.entity';
+import {  StdPluginAsset } from '../../../shared/entities/standard-plugin/std-plugin-asset.entity';
+import { StdPlugin } from '../../../shared/entities/standard-plugin/std-plugin.entity';
 import { Model, Types } from 'mongoose';
 
 @Injectable()

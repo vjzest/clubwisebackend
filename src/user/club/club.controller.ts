@@ -19,17 +19,17 @@ import {
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { ClubService } from './club.service';
-import { Club } from 'src/shared/entities/club.entity';
+import { Club } from '../../shared/entities/club.entity';
 
 import { CreateClubDto, UpdateClubDto } from './dto/club.dto';
 import { FileFieldsInterceptor, FilesInterceptor, FileInterceptor } from '@nestjs/platform-express';
-import { FileValidationPipe } from 'src/shared/pipes/file-validation.pipe';
-import { SkipAuth } from 'src/decorators/skip-auth.decorator';
+import { FileValidationPipe } from '../../shared/pipes/file-validation.pipe';
+import { SkipAuth } from '../../decorators/skip-auth.decorator';
 import { Request } from 'express';
 import { Types } from 'mongoose';
-import { ClubMembers } from 'src/shared/entities/clubmembers.entity';
+import { ClubMembers } from '../../shared/entities/clubmembers.entity';
 import { ClubRoleGuard } from '../guards/club/club-role.guard';
-import { Roles } from 'src/decorators/role.decorator';
+import { Roles } from '../../decorators/role.decorator';
 import { TPlugins } from 'typings';
 import { ApiOperation, ApiParam, ApiResponse, ApiQuery } from '@nestjs/swagger';
 import {

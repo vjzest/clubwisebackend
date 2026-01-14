@@ -4,7 +4,7 @@ import {
     ValidateNested, MinLength, MaxLength, IsNumber, Min,
     ArrayMinSize, IsDateString,
 } from 'class-validator';
-import { FieldType, KeyType } from 'src/shared/entities/standard-plugin/std-plugin.entity';
+import { FieldType, KeyType } from '../../../shared/entities/standard-plugin/std-plugin.entity';
 
 export class FieldOptionDto {
     @IsString()

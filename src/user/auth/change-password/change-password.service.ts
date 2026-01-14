@@ -3,13 +3,13 @@ import {
   BadRequestException,
   NotFoundException,
 } from '@nestjs/common';
-import { User } from 'src/shared/entities/user.entity';
+import { User } from '../../../shared/entities/user.entity';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { ServiceResponse } from 'src/shared/types/service.response.type';
+import { ServiceResponse } from '../../../shared/types/service.response.type';
 import { TokenExpiredError } from 'jsonwebtoken';
-import { hashPassword, verifyToken } from 'src/utils'; // Assuming you have a utility function to verify tokens
-import { TokenExpiredException } from 'src/shared/exceptions/token-expired.exception';
+import { hashPassword, verifyToken } from '../../../utils'; // Assuming you have a utility function to verify tokens
+import { TokenExpiredException } from '../../../shared/exceptions/token-expired.exception';
 
 @Injectable()
 export class ChangePasswordService {

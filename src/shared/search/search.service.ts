@@ -1,7 +1,7 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { Node_ } from 'src/shared/entities/node.entity';
+import { Node_ } from '../../shared/entities/node.entity';
 import { Club } from '../entities/club.entity';
 import { StdPluginAsset } from '../entities/standard-plugin/std-plugin-asset.entity';
 import { StdPlugin } from '../entities/standard-plugin/std-plugin.entity';

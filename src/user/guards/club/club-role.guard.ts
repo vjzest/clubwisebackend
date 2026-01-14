@@ -1,7 +1,7 @@
 import { CanActivate, ExecutionContext, ForbiddenException, Injectable, NotFoundException } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
 import { Model, Types } from "mongoose";
-import { ClubMembers } from "src/shared/entities/clubmembers.entity";
+import { ClubMembers } from '../../../shared/entities/clubmembers.entity';
 
 @Injectable()
 export class ClubRoleGuard implements CanActivate {

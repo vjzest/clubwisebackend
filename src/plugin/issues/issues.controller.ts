@@ -19,12 +19,12 @@ import {
 } from '@nestjs/common';
 
 import { IssuesService } from './issues.service';
-import { FileValidationPipe } from 'src/shared/pipes/file-validation.pipe';
+import { FileValidationPipe } from '../../shared/pipes/file-validation.pipe';
 import { Request } from 'express';
 import { FilesInterceptor } from '@nestjs/platform-express';
 import { memoryStorage } from 'multer';
 import { Types } from 'mongoose';
-import { Issues } from 'src/shared/entities/issues/issues.entity';
+import { Issues } from '../../shared/entities/issues/issues.entity';
 import { CreateSolutionDto, CreateSolutionsDto } from './dto/create-solution.dto';
 import { TCreationType, TForum, TIssueActionType } from 'typings';
 import { CommonService } from '../common/common.service';

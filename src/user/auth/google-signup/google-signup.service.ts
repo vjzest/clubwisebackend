@@ -1,12 +1,12 @@
 import { Injectable, ConflictException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { User } from 'src/shared/entities/user.entity';
+import { User } from '../../../shared/entities/user.entity';
 import { GoogleAuthDto } from './dto/google-auth';
-import { ServiceResponse } from 'src/shared/types/service.response.type';
-import { generateToken, hashPassword } from 'src/utils';
-import { generateRandomPassword } from 'src/utils/generatePassword';
-import { ENV } from 'src/utils/config/env.config';
+import { ServiceResponse } from '../../../shared/types/service.response.type';
+import { generateToken, hashPassword } from '../../../utils';
+import { generateRandomPassword } from '../../../utils/generatePassword';
+import { ENV } from '../../../utils/config/env.config';
 
 @Injectable()
 export class GoogleSignupService {

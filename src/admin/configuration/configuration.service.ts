@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { CreateConfigurationDto } from './dto/create-configuration.dto';
-import { Configuration } from 'src/shared/entities/configuration.entity';
+import { Configuration } from '../../shared/entities/configuration.entity';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 

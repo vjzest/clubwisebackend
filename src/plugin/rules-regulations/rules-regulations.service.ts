@@ -8,23 +8,23 @@ import {
 } from '@nestjs/common';
 import { InjectConnection, InjectModel } from '@nestjs/mongoose';
 import { Connection, Model, Types } from 'mongoose';
-import { RulesRegulations } from 'src/shared/entities/rules/rules-regulations.entity';
-import { UploadService } from 'src/shared/upload/upload.service';
-import { ClubMembers } from 'src/shared/entities/clubmembers.entity';
-import { NodeMembers } from 'src/shared/entities/node-members.entity';
-import { RulesOffenseReports } from 'src/shared/entities/rules/report-offense.entity';
-import { Club } from 'src/shared/entities/club.entity';
-import { Node_ } from 'src/shared/entities/node.entity';
-import { ProposeRulesAndRegulation } from 'src/shared/entities/propose-rulesAndRegulations';
-import { ChapterRuleRegulations } from 'src/shared/entities/chapters/modules/chapter-rule-regulations.entity';
-import { ChapterMember } from 'src/shared/entities/chapters/chapter-member.entity';
-import { ChapterModule } from 'src/user/chapter/chapter.module';
+import { RulesRegulations } from '../../shared/entities/rules/rules-regulations.entity';
+import { UploadService } from '../../shared/upload/upload.service';
+import { ClubMembers } from '../../shared/entities/clubmembers.entity';
+import { NodeMembers } from '../../shared/entities/node-members.entity';
+import { RulesOffenseReports } from '../../shared/entities/rules/report-offense.entity';
+import { Club } from '../../shared/entities/club.entity';
+import { Node_ } from '../../shared/entities/node.entity';
+import { ProposeRulesAndRegulation } from '../../shared/entities/propose-rulesAndRegulations';
+import { ChapterRuleRegulations } from '../../shared/entities/chapters/modules/chapter-rule-regulations.entity';
+import { ChapterMember } from '../../shared/entities/chapters/chapter-member.entity';
+import { ChapterModule } from '../../user/chapter/chapter.module';
 import { TForum } from 'typings';
-import { Comment } from 'src/shared/entities/comment.entity';
-import { Chapter } from 'src/shared/entities/chapters/chapter.entity';
+import { Comment } from '../../shared/entities/comment.entity';
+import { Chapter } from '../../shared/entities/chapters/chapter.entity';
 import { CommonService } from '../common/common.service';
-import { AssetsService } from 'src/assets/assets.service';
-import { RulesAdoption } from 'src/shared/entities/rules/rules-adoption.entity';
+import { AssetsService } from '../../assets/assets.service';
+import { RulesAdoption } from '../../shared/entities/rules/rules-adoption.entity';
 
 interface FileObject {
   buffer: Buffer;

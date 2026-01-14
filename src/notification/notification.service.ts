@@ -1,13 +1,13 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, Types } from 'mongoose';
-import { Chapter } from 'src/shared/entities/chapters/chapter.entity';
-import { Club } from 'src/shared/entities/club.entity';
-import { Node_ } from 'src/shared/entities/node.entity';
-import { Notification } from 'src/shared/entities/notification/notification.entity';
-import { StdPluginAsset } from 'src/shared/entities/standard-plugin/std-plugin-asset.entity';
-import { StdPlugin } from 'src/shared/entities/standard-plugin/std-plugin.entity';
-import { User } from 'src/shared/entities/user.entity';
+import { Chapter } from '../shared/entities/chapters/chapter.entity';
+import { Club } from '../shared/entities/club.entity';
+import { Node_ } from '../shared/entities/node.entity';
+import { Notification } from '../shared/entities/notification/notification.entity';
+import { StdPluginAsset } from '../shared/entities/standard-plugin/std-plugin-asset.entity';
+import { StdPlugin } from '../shared/entities/standard-plugin/std-plugin.entity';
+import { User } from '../shared/entities/user.entity';
 
 @Injectable()
 export class NotificationService {

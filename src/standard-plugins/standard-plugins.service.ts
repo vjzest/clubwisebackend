@@ -1,14 +1,14 @@
 import { ConflictException, Injectable, InternalServerErrorException } from '@nestjs/common';
-import { StdPlugin } from 'src/shared/entities/standard-plugin/std-plugin.entity';
+import { StdPlugin } from '../shared/entities/standard-plugin/std-plugin.entity';
 import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
-import { EPublishedStatus, StdPluginAsset } from 'src/shared/entities/standard-plugin/std-plugin-asset.entity';
+import { EPublishedStatus, StdPluginAsset } from '../shared/entities/standard-plugin/std-plugin-asset.entity';
 
 import { BadRequestException, NotFoundException } from '@nestjs/common';
 import { TForum } from 'typings';
-import { Club } from 'src/shared/entities/club.entity';
-import { Chapter } from 'src/shared/entities/chapters/chapter.entity';
-import { Node_ } from 'src/shared/entities/node.entity';
+import { Club } from '../shared/entities/club.entity';
+import { Chapter } from '../shared/entities/chapters/chapter.entity';
+import { Node_ } from '../shared/entities/node.entity';
 
 @Injectable()
 export class UserStdPluginsService {

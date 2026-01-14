@@ -1,8 +1,8 @@
 import { Injectable, InternalServerErrorException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { Club } from 'src/shared/entities/club.entity';
-import { Node_ } from 'src/shared/entities/node.entity';
+import { Club } from '../../shared/entities/club.entity';
+import { Node_ } from '../../shared/entities/node.entity';
 
 @Injectable()
 export class ForumsService {

@@ -4,7 +4,7 @@ import { ForgotPasswordService } from './forgot-password.service';
 import { ChangePasswordDto } from './dto/change-password.dto';
 import { Response } from 'express';
 import { BadRequestException, NotFoundException } from '@nestjs/common';
-import { SkipAuth } from 'src/decorators/skip-auth.decorator';
+import { SkipAuth } from '../../../decorators/skip-auth.decorator';
 
 @ApiTags('Auth')
 @SkipAuth()

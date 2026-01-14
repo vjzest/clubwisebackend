@@ -21,11 +21,11 @@ import { RulesRegulationsService } from './rules-regulations.service';
 import { CreateRulesRegulationsDto } from './dto/rules-regulation.dto';
 import { FilesInterceptor } from '@nestjs/platform-express';
 import { Request } from 'express';
-import { FileValidationPipe } from 'src/shared/pipes/file-validation.pipe';
+import { FileValidationPipe } from '../../shared/pipes/file-validation.pipe';
 import { memoryStorage } from 'multer';
 import { Types } from 'mongoose';
-import { CommentService } from 'src/user/comment/comment.service';
-import { RulesRegulations } from 'src/shared/entities/rules/rules-regulations.entity';
+import { CommentService } from '../../user/comment/comment.service';
+import { RulesRegulations } from '../../shared/entities/rules/rules-regulations.entity';
 import { TForum } from 'typings';
 
 export interface IFileObject {

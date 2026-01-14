@@ -9,16 +9,16 @@ import {
   Req,
 } from '@nestjs/common';
 import { PaymentService } from './payment.service';
-import { UserAuthGuard } from 'src/user/guards/user-auth.guard';
+import { UserAuthGuard } from '../user/guards/user-auth.guard';
 import {
   CreateSubscriptionDto,
   VerifyPaymentDto,
   CancelSubscriptionDto,
   GetSubscriptionDto,
 } from './dto/create-subscription.dto';
-import { ForumType } from 'src/shared/entities/forum-subscription.entity';
+import { ForumType } from '../shared/entities/forum-subscription.entity';
 import { Request } from 'express';
-import { SkipAuth } from 'src/decorators/skip-auth.decorator';
+import { SkipAuth } from '../decorators/skip-auth.decorator';
 
 @Controller('payment')
 export class PaymentController {

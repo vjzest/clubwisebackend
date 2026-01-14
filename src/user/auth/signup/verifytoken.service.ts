@@ -1,9 +1,9 @@
 // src/auth/auth.service.ts
 import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
-import { verifyToken } from 'src/utils';
+import { verifyToken } from '../../../utils';
 import { HttpException, HttpStatus } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { User } from 'src/shared/entities/user.entity';
+import { User } from '../../../shared/entities/user.entity';
 import { Model } from 'mongoose';
 
 @Injectable()

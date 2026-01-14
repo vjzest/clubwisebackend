@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, Types } from 'mongoose';
-import { Report } from 'src/shared/entities/reports.entity';
+import { Report } from '../../shared/entities/reports.entity';
 import { CreateReportDto } from './dto/createreport.dto';
 
 @Injectable()

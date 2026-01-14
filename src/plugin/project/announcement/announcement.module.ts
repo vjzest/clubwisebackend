@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { AnnouncementService } from './announcement.service';
 import { AnnouncementController } from './announcement.controller';
-import { SharedModule } from 'src/shared/shared.module';
+import { SharedModule } from '../../../shared/shared.module';
 
 @Module({
   imports: [SharedModule],

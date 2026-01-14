@@ -1,15 +1,15 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectConnection, InjectModel } from '@nestjs/mongoose';
 import { Connection, Model, Types } from 'mongoose';
-import { Report, ReportStatus, AssetType } from 'src/shared/entities/reports.entity';
+import { Report, ReportStatus, AssetType } from '../../shared/entities/reports.entity';
 import { UpdateReportStatusDto } from './dto/update-report-status.dto';
 import { QueryReportsDto } from './dto/query-reports.dto';
-import { StdPluginAsset } from 'src/shared/entities/standard-plugin/std-plugin-asset.entity';
-import { StdPlugin } from 'src/shared/entities/standard-plugin/std-plugin.entity';
-import { RulesRegulations } from 'src/shared/entities/rules/rules-regulations.entity';
-import { Issues } from 'src/shared/entities/issues/issues.entity';
-import { Debate } from 'src/shared/entities/debate/debate.entity';
-import { Projects } from 'src/shared/entities/projects/project.entity';
+import { StdPluginAsset } from '../../shared/entities/standard-plugin/std-plugin-asset.entity';
+import { StdPlugin } from '../../shared/entities/standard-plugin/std-plugin.entity';
+import { RulesRegulations } from '../../shared/entities/rules/rules-regulations.entity';
+import { Issues } from '../../shared/entities/issues/issues.entity';
+import { Debate } from '../../shared/entities/debate/debate.entity';
+import { Projects } from '../../shared/entities/projects/project.entity';
 
 @Injectable()
 export class AdminReportsService {

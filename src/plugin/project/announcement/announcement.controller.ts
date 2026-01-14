@@ -3,10 +3,10 @@ import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { AnnouncementService } from './announcement.service';
 import { CreateAnnouncementDto } from './dto/create-announcement.dto';
 import { UpdateAnnouncementDto } from './dto/update-announcement.dto';
-import { ProjectFiles } from 'src/decorators/project-file-upload/project-files.decorator';
+import { ProjectFiles } from '../../../decorators/project-file-upload/project-files.decorator';
 import { FileFieldsInterceptor, FileInterceptor } from '@nestjs/platform-express';
 import { memoryStorage } from 'multer';
-import { FileValidationPipe } from 'src/shared/pipes/file-validation.pipe';
+import { FileValidationPipe } from '../../../shared/pipes/file-validation.pipe';
 import { Types } from 'mongoose';
 
 @ApiTags('Projects - Announcements')

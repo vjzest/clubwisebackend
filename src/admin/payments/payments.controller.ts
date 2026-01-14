@@ -9,7 +9,7 @@ import {
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { PaymentsService } from './payments.service';
-import { AuthorizationService } from 'src/user/auth/authorization.service';
+import { AuthorizationService } from '../../user/auth/authorization.service';
 import { Request } from 'express';
 import { UpdatePaymentSlabsDto } from './dto/update-payment-slabs.dto';
 

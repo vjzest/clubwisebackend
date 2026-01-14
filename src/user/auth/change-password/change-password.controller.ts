@@ -14,7 +14,7 @@ import { ApiTags } from '@nestjs/swagger';
 import { TokenExpiredError } from 'jsonwebtoken';
 import { ChangePasswordService } from './change-password.service';
 import { Response } from 'express';
-import { SkipAuth } from 'src/decorators/skip-auth.decorator';
+import { SkipAuth } from '../../../decorators/skip-auth.decorator';
 
 @ApiTags('Auth')
 @SkipAuth()

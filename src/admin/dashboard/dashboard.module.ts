@@ -2,15 +2,15 @@ import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { DashboardController } from './dashboard.controller';
 import { DashboardService } from './dashboard.service';
-import { User, UserSchema } from 'src/shared/entities/user.entity';
-import { Node_, NodeSchema } from 'src/shared/entities/node.entity';
-import { Club, ClubSchema } from 'src/shared/entities/club.entity';
-import { StdPluginAsset, StdPluginAssetSchema } from 'src/shared/entities/standard-plugin/std-plugin-asset.entity';
-import { Module as ModuleEntity, ModuleSchema } from 'src/shared/entities/module.entity';
-import { AuthModule } from 'src/user/auth/auth.module';
-import { Report, ReportSchema } from 'src/shared/entities/reports.entity';
-import { StdPlugin, StdPluginSchema } from 'src/shared/entities/standard-plugin/std-plugin.entity';
-import { Domain, DomainSchema } from 'src/shared/entities/domain.entity';
+import { User, UserSchema } from '../../shared/entities/user.entity';
+import { Node_, NodeSchema } from '../../shared/entities/node.entity';
+import { Club, ClubSchema } from '../../shared/entities/club.entity';
+import { StdPluginAsset, StdPluginAssetSchema } from '../../shared/entities/standard-plugin/std-plugin-asset.entity';
+import { Module as ModuleEntity, ModuleSchema } from '../../shared/entities/module.entity';
+import { AuthModule } from '../../user/auth/auth.module';
+import { Report, ReportSchema } from '../../shared/entities/reports.entity';
+import { StdPlugin, StdPluginSchema } from '../../shared/entities/standard-plugin/std-plugin.entity';
+import { Domain, DomainSchema } from '../../shared/entities/domain.entity';
 
 @Module({
   imports: [

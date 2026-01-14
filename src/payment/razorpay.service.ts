@@ -1,7 +1,7 @@
 import { Injectable, InternalServerErrorException } from '@nestjs/common';
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const Razorpay = require('razorpay');
-import { ENV } from 'src/utils/config/env.config';
+import { ENV } from '../utils/config/env.config';
 import * as crypto from 'crypto';
 
 export interface CreateOrderParams {

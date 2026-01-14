@@ -1,6 +1,6 @@
 import { IsEnum, IsMongoId, IsOptional, IsString, MaxLength } from 'class-validator';
 import { Types } from 'mongoose';
-import { AssetType } from 'src/shared/entities/reports.entity';
+import { AssetType } from '../../../shared/entities/reports.entity';
 
 export class CreateReportDto {
   @IsEnum(AssetType)

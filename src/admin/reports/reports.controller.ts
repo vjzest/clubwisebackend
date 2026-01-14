@@ -3,9 +3,9 @@ import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { AdminReportsService } from './reports.service';
 import { UpdateReportStatusDto } from './dto/update-report-status.dto';
 import { QueryReportsDto } from './dto/query-reports.dto';
-import { UserAuthGuard } from 'src/user/guards/user-auth.guard';
-import { Roles } from 'src/decorators/role.decorator';
-import { AuthorizationService } from 'src/user/auth/authorization.service';
+import { UserAuthGuard } from '../../user/guards/user-auth.guard';
+import { Roles } from '../../decorators/role.decorator';
+import { AuthorizationService } from '../../user/auth/authorization.service';
 import { Request } from 'express';
 
 @ApiTags('Admin - Reports')

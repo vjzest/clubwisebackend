@@ -13,10 +13,10 @@ import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { CreateDetailsDto } from './dto/create-details.dto';
 
 import { OnboardingService } from './onboarding.service';
-import { UploadService } from 'src/shared/upload/upload.service';
+import { UploadService } from '../../shared/upload/upload.service';
 import { UpdateInterestDto } from './dto/update-interest.dto';
 import { Request } from 'express';
-import { SkipAuth } from 'src/decorators/skip-auth.decorator';
+import { SkipAuth } from '../../decorators/skip-auth.decorator';
 
 @ApiTags('Onboarding')
 @ApiBearerAuth()

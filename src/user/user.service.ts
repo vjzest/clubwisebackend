@@ -10,27 +10,27 @@ import mongoose, { ClientSession, Model, Types } from 'mongoose';
 
 import { UserResponseDto } from './dto/user.dto';
 import { plainToClass, Type } from 'class-transformer';
-import { User } from 'src/shared/entities/user.entity';
+import { User } from '../shared/entities/user.entity';
 import { UserWithoutPassword } from './dto/user.type';
 import { AccessDto } from './dto/access.dto';
-import { NodeMembers } from 'src/shared/entities/node-members.entity';
-import { ClubMembers } from 'src/shared/entities/clubmembers.entity';
-import { NodeJoinRequest } from 'src/shared/entities/node-join-requests.entity';
-import { ClubJoinRequests } from 'src/shared/entities/club-join-requests.entity';
-import { ChapterMember } from 'src/shared/entities/chapters/chapter-member.entity';
-import { GroupChat } from 'src/shared/entities/chat/group-chat.entity';
+import { NodeMembers } from '../shared/entities/node-members.entity';
+import { ClubMembers } from '../shared/entities/clubmembers.entity';
+import { NodeJoinRequest } from '../shared/entities/node-join-requests.entity';
+import { ClubJoinRequests } from '../shared/entities/club-join-requests.entity';
+import { ChapterMember } from '../shared/entities/chapters/chapter-member.entity';
+import { GroupChat } from '../shared/entities/chat/group-chat.entity';
 import { error } from 'node:console';
-import { UploadService } from 'src/shared/upload/upload.service';
-import { RulesRegulations } from 'src/shared/entities/rules/rules-regulations.entity';
-import { Debate } from 'src/shared/entities/debate/debate.entity';
-import { Issues } from 'src/shared/entities/issues/issues.entity';
-import { Projects } from 'src/shared/entities/projects/project.entity';
-import { Club } from 'src/shared/entities/club.entity';
-import { Node_ } from 'src/shared/entities/node.entity';
-import { StdPlugin } from 'src/shared/entities/standard-plugin/std-plugin.entity';
-import { StdPluginAsset } from 'src/shared/entities/standard-plugin/std-plugin-asset.entity';
+import { UploadService } from '../shared/upload/upload.service';
+import { RulesRegulations } from '../shared/entities/rules/rules-regulations.entity';
+import { Debate } from '../shared/entities/debate/debate.entity';
+import { Issues } from '../shared/entities/issues/issues.entity';
+import { Projects } from '../shared/entities/projects/project.entity';
+import { Club } from '../shared/entities/club.entity';
+import { Node_ } from '../shared/entities/node.entity';
+import { StdPlugin } from '../shared/entities/standard-plugin/std-plugin.entity';
+import { StdPluginAsset } from '../shared/entities/standard-plugin/std-plugin-asset.entity';
 import e from 'express';
-import { GenericPost } from 'src/shared/entities/generic-post.entity';
+import { GenericPost } from '../shared/entities/generic-post.entity';
 
 @Injectable()
 export class UserService {

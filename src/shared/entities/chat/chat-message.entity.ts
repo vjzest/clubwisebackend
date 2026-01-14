@@ -1,7 +1,7 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import { Document, Types } from "mongoose";
 import { GroupChat } from "./group-chat.entity";
-import { User } from "src/user/auth/signup/entities/user.entity";
+import { User } from '../../../user/auth/signup/entities/user.entity';
 
 @Schema({ timestamps: true })
 export class ChatMessage extends Document {

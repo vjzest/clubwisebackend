@@ -2,14 +2,14 @@ import { Controller, Get, Post, Body, Patch, Param, Delete, Req, UsePipes, Valid
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { StdAssetsService } from './standard-assets.service';
 import { Request } from 'express';
-import { AuthorizationService } from 'src/user/auth/authorization.service';
+import { AuthorizationService } from '../../user/auth/authorization.service';
 import { FilesInterceptor } from '@nestjs/platform-express';
-import { FileValidationPipe } from 'src/shared/pipes/file-validation.pipe';
+import { FileValidationPipe } from '../../shared/pipes/file-validation.pipe';
 import { memoryStorage } from 'multer';
 import { CreateStdAssetDto } from './dto/create-standard-asset.dto';
 import { Types } from 'mongoose';
 import { TForum } from 'typings';
-import { Club } from 'src/shared/entities/club.entity';
+import { Club } from '../../shared/entities/club.entity';
 import { SubmitCtaResponseDto } from './dto/submit-cta-response.dto';
 
 @ApiTags('Standard Assets')

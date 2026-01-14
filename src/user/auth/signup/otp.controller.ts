@@ -15,7 +15,7 @@ import { ApiTags } from '@nestjs/swagger';
 import { OtpService } from './otp.service';
 import { Response } from 'express'; // Import Response type from Express
 import { SendOtpDto } from './dto/send-otp-dto';
-import { SkipAuth } from 'src/decorators/skip-auth.decorator';
+import { SkipAuth } from '../../../decorators/skip-auth.decorator';
 
 @ApiTags('Auth')
 @SkipAuth()

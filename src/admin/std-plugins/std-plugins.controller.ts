@@ -1,11 +1,11 @@
 import { Controller, Get, Post, Body, Req, UsePipes, ValidationPipe, NotFoundException, Param, Patch, UploadedFiles, BadRequestException, InternalServerErrorException, ConflictException, Delete } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { AdminStdPluginsService } from './std-plugins.service';
-import { AuthorizationService } from 'src/user/auth/authorization.service';
+import { AuthorizationService } from '../../user/auth/authorization.service';
 import { Request } from 'express';
 import { CreateStdPluginDto } from './dto/create-standard-plugin.dto';
 import { UpdateStdPluginDto } from './dto/update-standard-plugin.dto';
-import { FileValidationPipe } from 'src/shared/pipes/file-validation.pipe';
+import { FileValidationPipe } from '../../shared/pipes/file-validation.pipe';
 import { FileFieldsInterceptor } from '@nestjs/platform-express';
 import { UseInterceptors } from '@nestjs/common';
 import { plainToInstance } from 'class-transformer';

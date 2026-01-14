@@ -2,7 +2,7 @@ import { Controller, Get, Param, Post, Req, UsePipes, ValidationPipe, Body } fro
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { UserStdPluginsService } from './standard-plugins.service';
 import { Request } from 'express';
-import { AuthorizationService } from 'src/user/auth/authorization.service';
+import { AuthorizationService } from '../user/auth/authorization.service';
 import { TForum } from 'typings';
 
 @ApiTags('Standard Plugins')

@@ -1,7 +1,7 @@
 import { CanActivate, ExecutionContext, ForbiddenException, Injectable, NotFoundException } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
 import { Model, Types } from "mongoose";
-import { NodeMembers } from "src/shared/entities/node-members.entity";
+import { NodeMembers } from '../../../shared/entities/node-members.entity';
 
 @Injectable()
 export class NodeRoleGuard implements CanActivate {

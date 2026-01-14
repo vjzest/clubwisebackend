@@ -3,9 +3,9 @@ import { ApiTags } from '@nestjs/swagger';
 import { Response } from 'express'; // Import Response type
 import {  GoogleSignupService } from './google-signup.service';
 import { GoogleAuthDto } from './dto/google-auth';
-import { User } from 'src/shared/entities/user.entity';
+import { User } from '../../../shared/entities/user.entity';
 import { ConflictException, InternalServerErrorException } from '@nestjs/common';
-import { SkipAuth } from 'src/decorators/skip-auth.decorator';
+import { SkipAuth } from '../../../decorators/skip-auth.decorator';
 
 @ApiTags('Auth')
 @SkipAuth()

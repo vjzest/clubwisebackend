@@ -1,7 +1,7 @@
 import { Injectable, InternalServerErrorException } from '@nestjs/common';
 import axios from 'axios';
 import { ConfigService } from '@nestjs/config';
-import { ENV } from 'src/utils/config/env.config';
+import { ENV } from '../utils/config/env.config';
 
 interface RecaptchaResponse {
   success: boolean;

@@ -3,7 +3,7 @@ import { Controller, Post, Headers, Res, HttpStatus, Req } from '@nestjs/common'
 import { ApiTags } from '@nestjs/swagger';
 import { VerifyToken } from './verifytoken.service';
 import { Response } from 'express';
-import { SkipAuth } from 'src/decorators/skip-auth.decorator';
+import { SkipAuth } from '../../../decorators/skip-auth.decorator';
 import { Body } from '@nestjs/common';
 
 @ApiTags('Auth')

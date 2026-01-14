@@ -1,15 +1,15 @@
 import { BadRequestException, Injectable, InternalServerErrorException, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Types } from 'mongoose';
-import { Bookmarks } from 'src/shared/entities/bookmarks.entity';
-import { Debate } from 'src/shared/entities/debate/debate.entity';
-import { GenericPost } from 'src/shared/entities/generic-post.entity';
-import { Issues } from 'src/shared/entities/issues/issues.entity';
-import { Projects } from 'src/shared/entities/projects/project.entity';
-import { RulesRegulations } from 'src/shared/entities/rules/rules-regulations.entity';
-import { StdPluginAsset } from 'src/shared/entities/standard-plugin/std-plugin-asset.entity';
-import { StdPlugin } from 'src/shared/entities/standard-plugin/std-plugin.entity';
-import { User } from 'src/shared/entities/user.entity';
+import { Bookmarks } from '../../shared/entities/bookmarks.entity';
+import { Debate } from '../../shared/entities/debate/debate.entity';
+import { GenericPost } from '../../shared/entities/generic-post.entity';
+import { Issues } from '../../shared/entities/issues/issues.entity';
+import { Projects } from '../../shared/entities/projects/project.entity';
+import { RulesRegulations } from '../../shared/entities/rules/rules-regulations.entity';
+import { StdPluginAsset } from '../../shared/entities/standard-plugin/std-plugin-asset.entity';
+import { StdPlugin } from '../../shared/entities/standard-plugin/std-plugin.entity';
+import { User } from '../../shared/entities/user.entity';
 
 
 @Injectable()

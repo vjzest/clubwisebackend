@@ -3,7 +3,7 @@ import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { Request } from 'express';
 import { Types } from 'mongoose';
 import { AdminAssetsService } from './admin-assets.service';
-import { AuthorizationService } from 'src/user/auth/authorization.service';
+import { AuthorizationService } from '../../user/auth/authorization.service';
 
 @ApiTags('Admin - Assets')
 @ApiBearerAuth()

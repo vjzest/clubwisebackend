@@ -2,8 +2,8 @@ import { Module } from '@nestjs/common';
 import { OnboardingController } from './onboarding.controller';
 import { OnboardingService } from './onboarding.service';
 import { MongooseModule } from '@nestjs/mongoose';
-import { SharedModule } from 'src/shared/shared.module';
-import { UploadModule } from 'src/shared/upload/upload.module';
+import { SharedModule } from '../../shared/shared.module';
+import { UploadModule } from '../../shared/upload/upload.module';
 
 
 @Module({

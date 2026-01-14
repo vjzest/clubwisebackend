@@ -20,17 +20,17 @@ import {
 } from '@nestjs/common';
 import { NodeService } from './node.service';
 import { FileFieldsInterceptor, FilesInterceptor, FileInterceptor } from '@nestjs/platform-express';
-import { FileValidationPipe } from 'src/shared/pipes/file-validation.pipe';
-import { User } from 'src/shared/entities/user.entity';
+import { FileValidationPipe } from '../../shared/pipes/file-validation.pipe';
+import { User } from '../../shared/entities/user.entity';
 import { Types } from 'mongoose';
 import { ApiBearerAuth, ApiBody, ApiOperation, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { Request } from 'express';
-import { SkipAuth } from 'src/decorators/skip-auth.decorator';
+import { SkipAuth } from '../../decorators/skip-auth.decorator';
 import {
   CreateGuidingPrinciples,
   UpdateGuidingPrinciples,
 } from './dto/guiding-principle.dto';
-import { Roles } from 'src/decorators/role.decorator';
+import { Roles } from '../../decorators/role.decorator';
 import { NodeRoleGuard } from '../guards/node/node-role.guard';
 import { TPlugins } from 'typings';
 import { memoryStorage } from 'multer';

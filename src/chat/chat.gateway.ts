@@ -3,11 +3,11 @@ import { InjectModel } from '@nestjs/mongoose';
 import { ConnectedSocket, MessageBody, OnGatewayConnection, OnGatewayDisconnect, SubscribeMessage, WebSocketGateway, WebSocketServer } from '@nestjs/websockets';
 import { Model, Types } from 'mongoose';
 import { Server, Socket } from 'socket.io';
-import { ChatMessage } from 'src/shared/entities/chat/chat-message.entity';
-import { GroupChat } from 'src/shared/entities/chat/group-chat.entity';
-import { User } from 'src/shared/entities/user.entity';
-import { WsAuthGuard } from 'src/user/guards/ws-auth.guard';
-import { ENV } from 'src/utils/config/env.config';
+import { ChatMessage } from '../shared/entities/chat/chat-message.entity';
+import { GroupChat } from '../shared/entities/chat/group-chat.entity';
+import { User } from '../shared/entities/user.entity';
+import { WsAuthGuard } from '../user/guards/ws-auth.guard';
+import { ENV } from '../utils/config/env.config';
 import { verify, JwtPayload } from 'jsonwebtoken'
 
 @WebSocketGateway({

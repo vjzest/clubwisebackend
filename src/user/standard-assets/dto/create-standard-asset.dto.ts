@@ -7,7 +7,7 @@ import {
     ValidateIf
 } from 'class-validator';
 import { Types } from 'mongoose';
-import { EPublishedStatus } from 'src/shared/entities/standard-plugin/std-plugin-asset.entity';
+import { EPublishedStatus } from '../../../shared/entities/standard-plugin/std-plugin-asset.entity';
 import { Transform } from 'class-transformer';
 
 

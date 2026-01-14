@@ -6,25 +6,25 @@ import {
 } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, Types } from 'mongoose';
-import { AuthorizationService } from 'src/user/auth/authorization.service';
-import { StdPluginAsset } from 'src/shared/entities/standard-plugin/std-plugin-asset.entity';
-import { StdAssetAdoption } from 'src/shared/entities/standard-plugin/std-asset-adoption.entity';
-import { RulesRegulations } from 'src/shared/entities/rules/rules-regulations.entity';
-import { RulesAdoption } from 'src/shared/entities/rules/rules-adoption.entity';
-import { Issues } from 'src/shared/entities/issues/issues.entity';
-import { IssuesAdoption } from 'src/shared/entities/issues/issues-adoption.entity';
-import { ChapterIssues } from 'src/shared/entities/chapters/modules/chapter-issues.entity';
-import { Debate } from 'src/shared/entities/debate/debate.entity';
-import { DebateAdoption } from 'src/shared/entities/debate/debate-adoption-entity';
-import { ChapterDebates } from 'src/shared/entities/chapters/modules/chapter-debates.entity';
-import { Comment } from 'src/shared/entities/comment.entity';
-import { IssueSolution } from 'src/shared/entities/issues/issue-solution.entity';
-import { DebateArgument } from 'src/shared/entities/debate/debate-argument.entity';
-import { Projects } from 'src/shared/entities/projects/project.entity';
-import { ProjectContribution } from 'src/shared/entities/projects/contribution.entity';
-import { ProjectAnnouncement } from 'src/shared/entities/projects/project-announcement.entity';
-import { ProjectActivities } from 'src/shared/entities/projects/project-activities.entity';
-import { ProjectFaq } from 'src/shared/entities/projects/faq.enitity';
+import { AuthorizationService } from '../../user/auth/authorization.service';
+import { StdPluginAsset } from '../../shared/entities/standard-plugin/std-plugin-asset.entity';
+import { StdAssetAdoption } from '../../shared/entities/standard-plugin/std-asset-adoption.entity';
+import { RulesRegulations } from '../../shared/entities/rules/rules-regulations.entity';
+import { RulesAdoption } from '../../shared/entities/rules/rules-adoption.entity';
+import { Issues } from '../../shared/entities/issues/issues.entity';
+import { IssuesAdoption } from '../../shared/entities/issues/issues-adoption.entity';
+import { ChapterIssues } from '../../shared/entities/chapters/modules/chapter-issues.entity';
+import { Debate } from '../../shared/entities/debate/debate.entity';
+import { DebateAdoption } from '../../shared/entities/debate/debate-adoption-entity';
+import { ChapterDebates } from '../../shared/entities/chapters/modules/chapter-debates.entity';
+import { Comment } from '../../shared/entities/comment.entity';
+import { IssueSolution } from '../../shared/entities/issues/issue-solution.entity';
+import { DebateArgument } from '../../shared/entities/debate/debate-argument.entity';
+import { Projects } from '../../shared/entities/projects/project.entity';
+import { ProjectContribution } from '../../shared/entities/projects/contribution.entity';
+import { ProjectAnnouncement } from '../../shared/entities/projects/project-announcement.entity';
+import { ProjectActivities } from '../../shared/entities/projects/project-activities.entity';
+import { ProjectFaq } from '../../shared/entities/projects/faq.enitity';
 
 @Injectable()
 export class AdminAssetsService {

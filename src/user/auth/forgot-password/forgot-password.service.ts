@@ -5,12 +5,12 @@ import {
 } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { User } from 'src/shared/entities/user.entity';
+import { User } from '../../../shared/entities/user.entity';
 import { ChangePasswordDto } from './dto/change-password.dto';
-import { generateToken } from 'src/utils';
-import { ServiceResponse } from 'src/shared/types/service.response.type';
-import { MailerService } from 'src/mailer/mailer.service';
-import { ENV } from 'src/utils/config/env.config';
+import { generateToken } from '../../../utils';
+import { ServiceResponse } from '../../../shared/types/service.response.type';
+import { MailerService } from '../../../mailer/mailer.service';
+import { ENV } from '../../../utils/config/env.config';
 
 @Injectable()
 export class ForgotPasswordService {

@@ -2,18 +2,18 @@ import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ClubController } from './club.controller';
 import { ClubService } from './club.service';
-import { Club, ClubSchema } from 'src/shared/entities/club.entity';
-import { SharedModule } from 'src/shared/shared.module';
+import { Club, ClubSchema } from '../../shared/entities/club.entity';
+import { SharedModule } from '../../shared/shared.module';
 import {
   ClubMembers,
   ClubMembersSchema,
-} from 'src/shared/entities/clubmembers.entity';
+} from '../../shared/entities/clubmembers.entity';
 import {
   ClubJoinRequests,
   ClubJoinRequestsSchema,
-} from 'src/shared/entities/club-join-requests.entity';
-import { NotificationModule } from 'src/notification/notification.module';
-import { StdPlugin, StdPluginSchema } from 'src/shared/entities/standard-plugin/std-plugin.entity';
+} from '../../shared/entities/club-join-requests.entity';
+import { NotificationModule } from '../../notification/notification.module';
+import { StdPlugin, StdPluginSchema } from '../../shared/entities/standard-plugin/std-plugin.entity';
 
 @Module({
   imports: [

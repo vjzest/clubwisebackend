@@ -7,7 +7,7 @@ import {
 import {
   BillingCycle,
   ForumType,
-} from 'src/shared/entities/forum-subscription.entity';
+} from '../../shared/entities/forum-subscription.entity';
 
 export class CreateSubscriptionDto {
   @IsString()

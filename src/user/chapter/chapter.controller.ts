@@ -4,11 +4,11 @@ import { Request } from 'express';
 import { CreateChapterDto, DeleteChapterDto, JoinUserChapterDto, LeaveUserChapterDto, RemoveUserChapterDto, RoleAccessDto, UpdateChapterStatusDto } from './dto/chapter.dto';
 import { ChapterService } from './chapter.service';
 import { Types } from 'mongoose';
-import { Roles } from 'src/decorators/role.decorator';
+import { Roles } from '../../decorators/role.decorator';
 import { NodeRoleGuard } from '../guards/node/node-role.guard';
 import { ChapterRoleGuard } from '../guards/chapter-role.guard';
 import { FileInterceptor } from '@nestjs/platform-express';
-import { FileValidationPipe } from 'src/shared/pipes/file-validation.pipe';
+import { FileValidationPipe } from '../../shared/pipes/file-validation.pipe';
 
 @ApiTags('Chapters')
 @ApiBearerAuth()

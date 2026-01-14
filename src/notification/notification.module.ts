@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { NotificationService } from './notification.service';
-import { SharedModule } from 'src/shared/shared.module';
+import { SharedModule } from '../shared/shared.module';
 import { NotificationGateway } from './notification.gateway';
 import { NotificationEventsService } from './notification-events.service';
 
