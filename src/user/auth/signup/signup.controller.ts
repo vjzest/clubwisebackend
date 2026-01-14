@@ -1,0 +1,35 @@
+// src/signup/signup.controller.ts
+import { Controller, Post, Body, Res, HttpStatus } from '@nestjs/common';
+import { ApiTags } from '@nestjs/swagger';
+import { CreateUserDto } from './dto/create-user.dto';
+import { SignupService } from './signup.service';
+import { Response } from 'express';
+import {
+  ConflictException,
+  BadRequestException,
+  InternalServerErrorException,
+} from '@nestjs/common';
+import { SkipAuth } from 'src/decorators/skip-auth.decorator';
+import { OtpService } from './otp.service';
+
+@ApiTags('Auth')
+@SkipAuth()
+@Controller()
+export class SignupController {
+  constructor(private readonly signupService: SignupService,
+
+  ) { }
+
+  @Post('sign-up')
+  async registerUser(@Body() createUser: CreateUserDto, @Res() res: Response) {
+    // Use the SignupService to handle the registration
+    try {
+      const result = await this.signupService.signUp(createUser);
+
+      // Return a success response
+      return res.status(HttpStatus.CREATED).json(result);
+    } catch (error) {
+      throw error
+    }
+  }
+}

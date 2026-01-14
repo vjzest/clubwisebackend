@@ -1,0 +1,244 @@
+
+
+export type KeyType = "title" | "description" | "updates" | "type" | "totalBudget" | "qualifications" | "domain" | "tags" | "authenticityLink" | "faq" | "significance" | "deadline" | "howItHelps" | "pocDetails" | "cost" | "files";
+
+  "fields": [
+    {
+      "key": "title",
+      "label": "Title2",
+      "type": "text",
+      "required": true,
+      "placeholder": "Enter title",
+      "minLength": 3,
+      "maxLength": 100,
+      "allowMultiple": false
+    },
+    {
+      "key": "description",
+      "label": "Description",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "Enter description",
+      "minLength": 10,
+      "maxLength": 1000,
+      "allowMultiple": false
+    },
+    {
+      "key": "updates",
+      "label": "Announcement",
+      "type": "updates",
+      "required": false,
+      "allowMultiple": false
+    },
+    {
+      "key": "type",
+      "label": "Category",
+      "type": "select",
+      "required": true,
+      "placeholder": "Enter Category",
+      "allowMultiple": false,
+      "options": [
+        {
+          "value": "op1",
+          "label": "Option1"
+        },
+        {
+          "value": "opt2",
+          "label": "Option2"
+        }
+      ]
+    },
+    {
+      "key": "totalBudget",
+      "label": "Total budget",
+      "type": "number",
+      "required": false,
+      "placeholder": "Enter budget amount",
+      "min": 0,
+      "allowMultiple": false
+    },
+    {
+      "key": "qualifications",
+      "label": "Qualifications",
+      "type": "select",
+      "required": true,
+      "placeholder": "Select Qualifications",
+      "allowMultiple": false,
+      "options": [
+        {
+          "value": "llb",
+          "label": "LLB"
+        },
+        {
+          "value": "ba",
+          "label": "BA"
+        },
+        {
+          "value": "btech",
+          "label": "BTECH"
+        }
+      ]
+    },
+    {
+      "key": "domain",
+      "label": "Domain",
+      "type": "domain",
+      "required": false,
+      "placeholder": "Enter domain",
+      "minLength": 2,
+      "maxLength": 50,
+      "allowMultiple": false
+    },
+    {
+      "key": "tags",
+      "label": "Tags",
+      "type": "tags",
+      "required": false,
+      "placeholder": "Enter tags",
+      "allowMultiple": false
+    },
+    {
+      "key": "authenticityLink",
+      "label": "Authenticity link",
+      "type": "text",
+      "required": false,
+      "placeholder": "Enter verification link",
+      "minLength": 5,
+      "maxLength": 200,
+      "allowMultiple": true
+    },
+    {
+      "key": "faq",
+      "label": "FAQ",
+      "type": "faq",
+      "required": false,
+      "placeholder": "Enter FAQ",
+      "allowMultiple": false
+    },
+    {
+      "key": "significance",
+      "label": "Significance",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "Enter significance",
+      "minLength": 3,
+      "maxLength": 100,
+      "allowMultiple": false
+    },
+    {
+      "key": "deadline",
+      "label": "Dates/deadline",
+      "type": "date",
+      "required": true,
+      "placeholder": "Enter deadline",
+      "minDate": {
+        "$date": "2025-05-01T00:00:00.000Z"
+      },
+      "maxDate": {
+        "$date": "2025-05-31T00:00:00.000Z"
+      },
+      "disablePast": true,
+      "allowMultiple": false
+    },
+    {
+      "key": "howItHelps",
+      "label": "How it helps",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "Explain how this helps",
+      "minLength": 10,
+      "maxLength": 500,
+      "allowMultiple": false
+    },
+    {
+      "key": "pocDetails",
+      "label": "POC details",
+      "type": "text",
+      "required": false,
+      "placeholder": "Enter point of contact",
+      "minLength": 3,
+      "maxLength": 100,
+      "allowMultiple": false
+    },
+    {
+      "key": "cost",
+      "label": "Cost",
+      "type": "number",
+      "required": false,
+      "placeholder": "Enter cost",
+      "min": 10,
+      "max": 50000,
+      "allowMultiple": false
+    },
+    {
+      "key": "files",
+      "label": "Add file/s",
+      "type": "file",
+      "required": true,
+      "allowMultiple": true
+    }
+  ],
+
+I have these many fields, 
+
+  note that the fields title are static ie i have only (KeyType) these many fields but some asset may have only some of these fields so in that way its dynamic, ie not every asset will have all the fields, the title and description is a must
+
+  the example data is like below: 
+
+  "data": {
+    "title": "Advanced Legal Workshop on Corporate Law",
+    "description": "A comprehensive workshop covering the latest developments in corporate law, including mergers and acquisitions, corporate governance, and regulatory compliance.",
+    "updates": [
+      {
+        "title": "Registration Open",
+        "content": "Registration is now open for all participants. Early bird discounts available until May 20, 2025.",
+        "date": {
+          "$date": "2025-05-10T10:00:00.000Z"
+        }
+      }
+    ],
+    "type": "op1",
+    "totalBudget": 25000,
+    "qualifications": "llb",
+    "domain": "Legal",
+    "tags": [
+      "corporate law",
+      "legal workshop",
+      "professional development"
+    ],
+    "authenticityLink": [
+      "https://example.com/verification/workshop-123",
+      "https://legalassociation.org/events/corporate-law-2025"
+    ],
+    "faq": [
+      {
+        "question": "Who can attend this workshop?",
+        "answer": "This workshop is open to all legal professionals with a minimum of LLB qualification."
+      },
+      {
+        "question": "Will certificates be provided?",
+        "answer": "Yes, all participants will receive a certificate of completion."
+      }
+    ],
+    "significance": "This workshop is essential for legal professionals looking to stay updated with the latest corporate law practices.",
+    "deadline": {
+      "$date": "2025-05-25T23:59:59.000Z"
+    },
+    "howItHelps": "Participants will gain practical insights into corporate law applications, enhancing their professional capabilities and career prospects.",
+    "pocDetails": "Jane Doe, Program Coordinator (jane.doe@example.com, +1-234-567-8901)",
+    "cost": 1500,
+    "files": [
+      "https://storage.example.com/files/workshop-brochure.pdf",
+      "https://storage.example.com/files/speaker-profiles.pdf"
+    ]
+  },
+ 
+
+so give me an Preview UI to display this data as an social media post.
+
+like there will be title below which there is description and  so on so i will be having fields array based on that u need to create an preview UI for admin to see how the ui of the post will look like. so u need to manage the ui based on if an field present or not.
+
+Note: u can show tags as badges, faqs as accordian and put the whole faq inside an accordian so that user can click on it to see the faq. 
+cost, budget, deadline, totalbudget, type, domain, qualifications and all u can show as cards as it will be small text.
+
+use: shadcn ui for ui, typescript, tailwindcss, nextjs, just give me dynamic preview ui

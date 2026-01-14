@@ -1,0 +1,81 @@
+// src/auth/auth.controller.ts
+import { Controller, Post, Headers, Res, HttpStatus, Req } from '@nestjs/common';
+import { ApiTags } from '@nestjs/swagger';
+import { VerifyToken } from './verifytoken.service';
+import { Response } from 'express';
+import { SkipAuth } from 'src/decorators/skip-auth.decorator';
+import { Body } from '@nestjs/common';
+
+@ApiTags('Auth')
+@SkipAuth()
+@Controller()
+export class VerifyTokenController {
+  constructor(private readonly verify_Token: VerifyToken) {}
+
+  @Post('verify-token')
+  async verifyToken(
+    @Headers('authorization') authHeader: string, // Extract token from headers
+    @Res() res: Response,
+  ) {
+    if (!authHeader) {
+      return res.status(HttpStatus.BAD_REQUEST).json({
+        status: false,
+        message: 'Authorization header missing',
+      });
+    }
+
+    const token = authHeader.replace('Bearer ', ''); // Remove 'Bearer' prefix from the token
+
+    try {
+      // Call the service to verify the token
+      const result = await this.verify_Token.verifyToken(token);
+
+      return res.status(HttpStatus.OK).json(result);
+    } catch (error) {
+      // Handle errors thrown by the service
+      return res.status(error.getStatus()).json(error.getResponse());
+    }
+  }
+
+  @Post('verify-login')
+  async verifyLogin(
+    @Headers('authorization') authHeader: string,
+    @Res() res: Response,
+  ) {
+    try {
+      const token = authHeader.replace('Bearer ', '');
+      const response = await this.verify_Token.verifyLogin(token);
+      return res.status(HttpStatus.OK).json(response);
+    } catch (error) {
+      if (error.name === 'TokenExpiredError') {
+        res.status(HttpStatus.UNAUTHORIZED).json(error);
+      } else if (error.name === 'JsonWebTokenError') {
+        res.status(HttpStatus.UNAUTHORIZED).json(error);
+      } else {
+        res.status(HttpStatus.INTERNAL_SERVER_ERROR).json({
+          status: false,
+          message: 'Token verification failed',
+        });
+      }
+    }
+  }
+
+
+@Post('re-verify')    
+  async reVerifyUser(
+    @Body('email') email: string
+  ){
+    console.log("api calll")
+    try {
+      const user = await this.verify_Token.checkUserStatus(email);
+      
+      return {
+        isVerified: user.isVerified,
+       
+      };
+    } catch (error) {
+      throw error;
+    }
+  }
+
+}
