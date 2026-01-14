@@ -4,7 +4,7 @@ import { ENV } from './utils/config/env.config';
 import { printWithBorder } from './utils/text';
 import morgan from 'morgan';
 import { json, urlencoded } from 'express';
-import * as compression from 'compression';
+import compression from 'compression';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 
 async function bootstrap() {

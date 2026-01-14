@@ -1,6 +1,6 @@
 import { Injectable, NestMiddleware } from '@nestjs/common';
 import { Request, Response, NextFunction } from 'express';
-import * as multer from 'multer';
+import multer from 'multer';
 
 @Injectable()
 export class FileUploadMiddleware implements NestMiddleware {
